@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Store</title>
+    
+    <!-- Add Bootstrap 5 CSS from CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <!-- Add custom CSS for slider and cart box -->
+    <style>
+        /* Customize the cart box style */
+        .cart-box {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Customize the slider height and add a shadow */
+        .slider {
+            max-height: 400px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Mobile Store</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <!-- Slider for mobile photos -->
+        <div id="mobileSlider" class="carousel slider mb-4">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="" class="d-block w-100" alt="Mobile 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="mobile2.jpg" class="d-block w-100" alt="Mobile 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="mobile3.jpg" class="d-block w-100" alt="Mobile 3">
+                </div>
+            </div>
+        </div>
+
+        <h1>Welcome to our Mobile Store</h1>
+        <p>Explore the latest mobile devices and accessories.</p>
+    </div>
+
+    <!-- Cart Box -->
+    <div class="cart-box">
+        <h4>Your Cart</h4>
+        <ul>
+            <!-- Cart items will be added dynamically using JavaScript -->
+        </ul>
+    </div>
+
+    <!-- Add Bootstrap 5 JavaScript from CDN (for Navbar toggle and Carousel) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
